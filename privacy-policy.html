@@ -1,0 +1,172 @@
+<!--
+  Replacement for https://arkanmgerges.github.io/local-speed-reading-site/privacy.html
+
+  This file belongs in the local-speed-reading-site repository, not in the app
+  repository. It is kept here because the Play listing cannot be published
+  without it and because the Data safety form must agree with it word for word.
+
+  The version currently live states that the app "does not collect, store,
+  transmit, or share personal or sensitive user data" and "does not share user
+  data with third parties". Both statements are false for the shipping app:
+  lib/main.dart initialises Google AdMob and lib/di/app_di.dart registers
+  Google Analytics for Firebase. Publishing a Data safety form that contradicts
+  the privacy policy is itself a User Data policy violation - the same policy
+  family the app was removed under in February 2024.
+
+  If the SDKs are ever removed, revert to the simpler text; until then this is
+  what the app actually does.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy - Local Speed Reading</title>
+</head>
+
+<body>
+  <main>
+    <h1>Privacy Policy - Local Speed Reading</h1>
+
+    <p>Last updated: September 22, 2026</p>
+
+    <p>
+      Local Speed Reading is developed and published by arkan.m.gerges. This
+      policy explains what the app keeps on your device, what leaves your
+      device, and who receives it.
+    </p>
+
+    <h2>What stays on your device</h2>
+    <p>
+      Local Speed Reading is built to work without an account and without a
+      server. The following never leaves your device and is never sent to the
+      developer:
+    </p>
+    <ul>
+      <li>Your account. Accounts are local to the device and consist of a user
+        name and an optional password. No e-mail address is required or
+        collected, and there is no cloud account.</li>
+      <li>Your books. Built-in books, books downloaded from the public-domain
+        catalogue, and any file, web page or text you import are stored in the
+        app's private storage on the device.</li>
+      <li>The text you read, your reading position, your bookmarks and your
+        notes.</li>
+      <li>Your reading statistics: words per minute, session history, daily
+        goals, streaks and personal bests.</li>
+      <li>Your settings, including the profile picture you may choose from your
+        gallery, which is copied into the app's private storage and is not
+        uploaded.</li>
+    </ul>
+    <p>
+      Uninstalling the app removes all of it from the device.
+    </p>
+
+    <h2>What the app sends, and to whom</h2>
+
+    <h3>Advertising (free version only)</h3>
+    <p>
+      The free version shows ads supplied by Google AdMob while the device is
+      online. To serve and measure those ads, the Google Mobile Ads SDK
+      collects your device's advertising ID along with device and ad-interaction
+      information, and shares it with Google and its advertising partners. This
+      is the only data the app shares with third parties.
+    </p>
+    <p>
+      You can reset or delete the advertising ID at any time in Android under
+      Settings, Privacy, Ads. Subscribing to Pro removes all ads and, with
+      them, this collection.
+    </p>
+
+    <h3>Usage statistics</h3>
+    <p>
+      The app uses Google Analytics for Firebase to understand which screens
+      and features are used, so that development effort goes to the right
+      places. It records events such as which screen was opened, together with
+      an app instance identifier and general device information (model,
+      operating system version, approximate region).
+    </p>
+    <p>
+      It never records your name, your e-mail address, the text of any book,
+      the contents of anything you import, your reading position, or the
+      contents of your statistics.
+    </p>
+
+    <h3>Downloading books</h3>
+    <p>
+      When you choose to download a book from the public-domain catalogue, the
+      app requests that file from <code>books.localspeedreading.com</code>,
+      which is hosted on Cloudflare R2. Like any web server, it records the
+      request in standard server logs, which include your IP address. Those
+      logs are used to operate and protect the service and are not linked to
+      any account or profile.
+    </p>
+
+    <h3>Importing a web page</h3>
+    <p>
+      If you ask the app to import a web page, the app fetches the address you
+      supplied. That request goes to the website you named, which will see it
+      as it would any other visit. The developer does not receive the address
+      or the page.
+    </p>
+
+    <h3>The Pro subscription</h3>
+    <p>
+      The Pro subscription is sold and processed by Google Play. Payment is
+      handled entirely by Google; the developer never receives or stores your
+      payment details. The app only asks Google Play whether a valid
+      subscription exists.
+    </p>
+
+    <h2>Third parties</h2>
+    <p>
+      The services named above are operated by their own providers and handle
+      data under their own policies:
+    </p>
+    <ul>
+      <li>Google AdMob and Google Analytics for Firebase -
+        <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+      <li>Cloudflare, which hosts the book catalogue -
+        <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a></li>
+    </ul>
+
+    <h2>Data retention and deletion</h2>
+    <p>
+      Everything the app stores on your device is deleted when you uninstall
+      the app. You can also reset your reading progress, delete your own books
+      and remove a local account from inside the app at any time.
+    </p>
+    <p>
+      The developer holds no personal account data and therefore has nothing to
+      delete on request. Advertising and analytics data is held by Google under
+      its own retention rules; you can reset your advertising ID in Android
+      settings, and you may contact the developer at the address below with any
+      question about this policy.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      Local Speed Reading is not directed to children under 13, and the
+      developer does not knowingly collect data from them.
+    </p>
+
+    <h2>Permissions</h2>
+    <p>
+      The app requests internet access, which it uses for the purposes
+      described above, and the Google Play billing permission, which it uses
+      for the Pro subscription.
+    </p>
+
+    <h2>Changes to this privacy policy</h2>
+    <p>
+      If a future version of Local Speed Reading changes what it collects, this
+      policy will be updated and the date at the top will change.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      For privacy-related questions, contact:
+      <a href="mailto:arkan.m.gerges@gmail.com">arkan.m.gerges@gmail.com</a>
+    </p>
+  </main>
+</body>
+</html>
