@@ -1,21 +1,3 @@
-<!--
-  Replacement for https://arkanmgerges.github.io/local-speed-reading-site/privacy.html
-
-  This file belongs in the local-speed-reading-site repository, not in the app
-  repository. It is kept here because the Play listing cannot be published
-  without it and because the Data safety form must agree with it word for word.
-
-  The version currently live states that the app "does not collect, store,
-  transmit, or share personal or sensitive user data" and "does not share user
-  data with third parties". Both statements are false for the shipping app:
-  lib/main.dart initialises Google AdMob and lib/di/app_di.dart registers
-  Google Analytics for Firebase. Publishing a Data safety form that contradicts
-  the privacy policy is itself a User Data policy violation - the same policy
-  family the app was removed under in February 2024.
-
-  If the SDKs are ever removed, revert to the simpler text; until then this is
-  what the app actually does.
--->
 <!doctype html>
 <html lang="en">
 <head>
