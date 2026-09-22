@@ -5,7 +5,7 @@ This repository hosts the public website and privacy policy for the **Local Spee
 ## Pages
 
 - Website: https://arkanmgerges.github.io/local-speed-reading-site/
-- Privacy Policy: https://arkanmgerges.github.io/local-speed-reading-site/privacy.html
+- Privacy Policy: https://arkanmgerges.github.io/local-speed-reading-site/privacy-policy.html
 
 ## Purpose
 
